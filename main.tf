@@ -106,6 +106,9 @@ resource "aws_lb" "alb" {
   }
 }
 
+//Default vpc
+resource "aws_vpc" "main" {
+}
 //Target Group
 resource "aws_lb_target_group" "albtg" {
   name     = "tf-example-lb-tg"
